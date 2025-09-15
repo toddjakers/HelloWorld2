@@ -1,6 +1,7 @@
 package com.cs407.helloworld
 
 import android.os.Bundle
+import android.widget.ImageView
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -14,6 +15,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.cs407.helloworld.ui.theme.HelloWorldTheme
 
 class MainActivity : ComponentActivity() {
+    private lateinit var imgView: ImageView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
